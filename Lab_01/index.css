@@ -1,0 +1,382 @@
+:root {
+    --bg-color: #ffffff;
+    --on-white-bg: #000000;
+    --text-color: #777777;
+    --bg-grey: #424141;
+    --bg-grey-2: #cac9c9;
+    --bg-hover-color: #000000;
+    --shadow-color: #54545454;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1.8rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 0.2px;
+}
+
+
+/* common */
+button {
+    border: none;
+}
+
+
+/* header starts */
+.navbar {
+    width: 100vw;
+    height: 48px;
+    background-color: var(--bg-color);
+}
+
+.nav-item {
+    display: inline-block;
+    padding: 0 16px;
+    line-height: 48px;
+}
+
+.nav-item:hover {
+    background-color: var(--bg-grey-2);
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--bg-hover-color);
+}
+
+.nav-link:active {
+    text-decoration: none;
+    color: var(--bg-hover-color);
+}
+
+.nav-search {
+    float: right;
+}
+
+.sticky {
+    box-shadow: 0px 5px 3px var(--shadow-color);
+    position: fixed;
+    z-index: 9999;
+}
+
+
+
+
+/* top background and logo */
+.top .bg-img {
+    background: url("./images/RNI-Films-IMG-6FDFFE7E-E329-4939-98B6-821D79D32D86.JPG") no-repeat fixed center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.top .bg-logo {
+    background-color: var(--bg-grey);
+    color: var(--bg-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 10px;
+    font-size: 1.5em;
+    padding: 16px 20px;
+    text-align: center;
+}
+
+
+/* main content starts here */
+.main-content {
+    color: var(--text-color);
+}
+
+.main-content .container {
+    background-color: var(--bg-color);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 900px;
+}
+
+.content-section .title {
+    line-height: 40vh;
+    color: var(--bg-color);
+    letter-spacing: 8px;
+    font-size: 2em;
+    backdrop-filter: contrast(60%);
+}
+
+.content-section .top {
+    text-align: center;
+    padding-top: 64px;
+}
+
+.content-section .top .sub-title {
+    padding: 24px 100px;
+    font-style: italic;
+}
+
+.content-section .main {
+    padding-top: 24px;
+}
+
+/* about section starts here */
+.about-section .main {
+    display: block;
+}
+
+.about-section .author {
+    padding-top: 32px;
+}
+
+.about-section .author-info {
+    float: left;
+    width: 49%;
+    padding-right: 1rem;
+}
+
+.author-info .author-img {
+    width: 100%;
+    aspect-ratio: 500 / 333;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.author-info .author-name {
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.author-info .author-name i {
+    margin-right: 16px;
+}
+
+.author .highlight {
+    width: 49%;
+    display: inline-block;
+    padding-left: 24px;
+}
+
+
+/* skill section starts here */
+.skills-section {
+    padding-top: 64px !important;
+    padding-bottom: 32px !important;
+}
+
+.skills-section>p {
+    font-size: 1.2em;
+    text-align: center;
+    padding-bottom: 16px;
+}
+
+.skills-section .skill>p {
+    margin-top: 1rem;
+    letter-spacing: 0.8rem;
+}
+
+.skill .bar {
+    margin-top: 0.5rem;
+    background-color: var(--bg-grey-2);
+    height: 36px;
+    display: flex;
+}
+
+.skill .bar .rate {
+    background-color: var(--bg-grey);
+    color: var(--bg-color);
+    height: 100%;
+    line-height: 35px;
+    text-align: center;
+}
+
+.photography .rate {
+    flex: 0 0 90%;
+}
+
+.web-design .rate {
+    flex: 0 0 85%;
+}
+
+.photoshop .rate {
+    flex: 0 0 75%;
+}
+
+
+/* experiences starts here */
+.experiences {
+    margin-top: 3rem;
+    display: flex;
+    background-color: var(--bg-grey);
+    color: var(--bg-color);
+    justify-content: space-around;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.experience .number {
+    font-size: 1.8em;
+    padding: 8px 0;
+}
+
+
+/* porfolio section starts */
+.content-section .bg-img {
+    width: 100%;
+    height: 40vh;
+    text-align: center;
+}
+
+.porfolio-section .bg-img {
+    background: url("./images/RNI-Films-IMG-AC3035E4-C16D-42C1-8674-F82FACCB6850.JPG") no-repeat fixed center;
+    background-size: cover;
+}
+
+.porfolio-section .pictures {
+    flex-flow: row wrap;
+    padding-top: 24px;
+    text-align: center;
+}
+
+.porfolio-section .pictures img {
+    width: 24%;
+    aspect-ratio: 4/3;
+    padding: 5px;
+    object-fit: cover;
+}
+
+.porfolio-section button {
+    margin: 4rem auto;
+    padding: 16px 20px;
+    display: block;
+}
+
+.porfolio-section button:hover {
+    background-color: var(--bg-hover-color);
+    color: var(--bg-color);
+}
+
+
+/* contact section starts here */
+.contact-section .bg-img {
+    background: url("./images/RNI-Films-IMG-D33986B3-CED1-47C6-85C4-E1990CD8FBEE.JPG") no-repeat fixed center;
+    background-size: cover;
+}
+
+.contact-section .main {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.contact-section .main .map {
+    width: 160px;
+    aspect-ratio: 4/3;
+    border-radius: 10px;
+
+}
+
+.contact-section .main .contacts {
+    text-align: left;
+}
+
+.contact-section .main .contacts p {
+    margin: 10px 30px;
+}
+
+.contact-section .main .contacts i {
+    margin-right: 10px;
+}
+
+.contact-form {
+    padding: 24px 0;
+    margin-left: 182px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form form div {
+    display: flex;
+}
+
+.contact-form input {
+    margin: 5px 5px 5px 0;
+    border: 1px solid var(--bg-grey-2);
+    padding: 12px;
+}
+
+.contact-form .name,
+.email {
+    width: 50%;
+}
+
+.contact-form .message {
+    width: 100%;
+}
+
+.contact-form button {
+    width: max-content;
+    align-self: self-end;
+    background-color: var(--bg-hover-color);
+    color: var(--bg-color);
+    margin-top: 16px;
+    margin-right: 5px;
+    padding: 16px 20px;
+}
+
+.contact-form button:hover {
+    background-color: var(--bg-grey-2);
+}
+
+
+
+/* footer starts here */
+footer {
+    background-color: var(--bg-grey);
+    color: var(--bg-color);
+    text-align: center;
+    padding: 32px 0 64px;
+    margin-top: 64px;
+}
+
+footer:hover {
+    background-color: var(--bg-hover-color);
+}
+
+footer button {
+    color: var(--bg-grey);
+    padding: 16px 20px;
+    margin: 32px 0 16px;
+    font-weight: 700;
+}
+
+footer button:hover {
+    background-color: var(--bg-grey-2);
+}
+
+
+footer button i {
+    margin-right: 10px;
+}
+
+footer .brands i {
+    margin: 16px 0;
+    font-size: 1.8em;
+}
+
+footer .signature {
+    font-weight: 600;
+    font-size: 1em;
+    margin: 16px 0;
+}
+
+footer span {
+    text-decoration: underline;
+}
